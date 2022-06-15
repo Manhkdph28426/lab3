@@ -1,13 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/897caa2e8c.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+    <header class="mt-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="logo font-bold text-3xl ">
+                <a href="index.html">Fudo<strong class="text-red-500">.</strong></a>
+            </div>       
+                <ul class="flex items-center text-lg ">
+                    <li class="mr-5 text-red-500"><a href="index.html">Home</a></li>
+                    <li class="mr-5"><a href="product.html">Products</a></li>
+                    <li class="mr-5"><a href="">About Us</a></li>
+                    <li class="mr-5"><a href="">Contact Us</a></li>
+                </ul>       
+            <div class="flex">
+                <button class="mr-2.5"><i class="fa-solid fa-cart-shopping hidden md:block"></i></button>
+                <a href="signin.html" class="mr-2.5 p-2 border-2 border-solid border-red-500 rounded text-sm block">Sign In</a>
+                <a href="signup.html" class="p-2 border-2 border-solid border-red-500 rounded bg-red-500 text-white text-sm block">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <section class="banner mt-8 ml-5 md:ml-0">
+        <div class="max-w-7xl mx-auto ">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="banner-column mt-12">
+                    <span class="bg-red-200/50 text-red-400 text-lg p-2.5 rounded">Quality Food</span>
+                    <h2 class="text-7xl font-bold mt-5 mb-5">Fastest<br><span class="text-red-500">Delivery</span> &<br> Easy <span class="text-red-500">Pickup</span></h2>
+                    <p>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
+                    <form action="" class="mt-5 md:w-[80%] md:w-full">
+                        <input type="text" placeholder="Enter your delivery location" class="w-[75%] py-4 pl-4 outline-none text-black border border-red-500 rounded-l-lg">
+                        <button class="w-[24%] px-2.5 py-[17px] bg-red-500 rounded-r-lg text-white -ml-[5px]">Discover</button>
+                    </form>
+                </div>
+                <div class="banner-column">
+                    <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049882/baiasm/Images_1_qpawcd.png" alt="" class="w-3/4 mx-auto md:float-right">
+                </div>
+            </div>
+        </div>
+        <!-- End.banner -->
+    </section>
+    <section class="product ml-5 md:ml-0"> 
+        <div class="max-w-7xl mx-auto">
+            <div class="product-heading text-center">
+                <h2 class="text-5xl font-bold mt-12 mb-4 ">Our Popular Dishes</h2>
+                <p class="text-base">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqut enim ad minim </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-8">
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="detail.html">
+                            <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_3_qtc2q5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class="text-red-500 text-lg my-4"><a href="detail.html">Big and Juicy Wagyu Beef Cheeseburger</a></h3>
+                        <div class="flex text-sm">
+                            <span class="mr-4"><i class="fa-solid fa-stopwatch"></i><span class="text-slate-500"> 30 Minutes</span></span>
+                            <span><i class="fa-solid fa-utensils"></i><span class="text-slate-500"> Snack</span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_2_wpltcj.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class="text-red-500 text-lg my-4"><a href="">Fresh Lime Roasted Salmon</a></h3>
+                        <div class="flex text-sm">
+                            <span class="mr-4"><i class="fa-solid fa-stopwatch"></i><span class="text-slate-500"> 30 Minutes</span></span>
+                            <span><i class="fa-solid fa-utensils"></i><span class="text-slate-500"> Fish</span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049880/baiasm/Mask_Group_5_xfk9ri.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class="text-red-500 text-lg my-4"><a href="">The Best Easy One Pot Chicken and Rice</a></h3>
+                        <div class="flex text-sm">
+                            <span class="mr-4"><i class="fa-solid fa-stopwatch"></i><span class="text-slate-500"> 30 Minutes</span></span>
+                            <span><i class="fa-solid fa-utensils"></i><span class="text-slate-500"> Snack</span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049880/baiasm/Mask_Group_1_uxwujd.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class="text-red-500 text-lg my-4"><a href="">Fresh and Healthy Mixed Mayonnaise </a></h3>
+                        <div class="flex text-sm">
+                            <span class="mr-4"><i class="fa-solid fa-stopwatch"></i><span class="text-slate-500"> 30 Minutes</span></span>
+                            <span><i class="fa-solid fa-utensils"></i><span class="text-slate-500"> Snack</span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_2_wpltcj.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class="text-red-500 text-lg my-4"><a href="">The Creamiest Creamy Chicken </a></h3>
+                        <div class="flex text-sm">
+                            <span class="mr-4"><i class="fa-solid fa-stopwatch"></i><span class="text-slate-500"> 30 Minutes</span></span>
+                            <span><i class="fa-solid fa-utensils"></i><span class="text-slate-500"> Healthy</span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_4_dtz9h2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class="text-red-500 text-lg my-4"><a href="">Fruity Pancake with Orange & Blueberry</a></h3>
+                        <div class="flex text-sm">
+                            <span class="mr-4"><i class="fa-solid fa-stopwatch"></i><span class="text-slate-500"> 30 Minutes</span></span>
+                            <span><i class="fa-solid fa-utensils"></i><span class="text-slate-500"> Noodles</span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End.items -->
+            </div>
+        </div>
+    </section>
+    <section class="categories mt-4 ml-5 md:ml-0">
+        <div class="max-w-7xl mx-auto">
+            <div class="categories-heading flex justify-between items-center">
+                <h2 class="text-5xl font-bold">Categories</h2>
+                <a href="" class="px-4 py-2.5 border border-solid border-red-400 rounded text-red-500 hidden md:block">View All Categories</a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 gap-8 mt-20">
+                <div class="categories-items">
+                    <div class="categories-items-images">
+                        <a href="">
+                            <img class="block mx-auto" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655050415/baiasm/Group_879_lyjqqs.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="text-lg pr-8 font-bold text-center"><a href="">Breakfast</a></h3>
+                </div>
+                <!-- End.categories items -->
+                <div class="categories-items">
+                    <div class="categories-items-images">
+                        <a href="">
+                            <img class="block mx-auto" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655050415/baiasm/Group_891_ugysxd.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="text-lg pr-8 font-bold text-center"><a href="">Vegan</a></h3>
+                </div>
+                <!-- End.categories items -->
+                <div class="categories-items">
+                    <div class="categories-items-images">
+                        <a href="">
+                            <img class="block mx-auto" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655050415/baiasm/Group_894_sysiqd.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="text-lg pr-8 font-bold text-center"><a href="">Meat</a></h3>
+                </div>
+                <!-- End.categories items -->
+                <div class="categories-items">
+                    <div class="categories-items-images">
+                        <a href="">
+                            <img class="block mx-auto" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655050415/baiasm/Group_890_zoeh8z.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="text-lg pr-8 font-bold text-center"><a href="">Dessert</a></h3>
+                </div>
+                <!-- End.categories items -->
+                <div class="categories-items">
+                    <div class="categories-items-images">
+                        <a href="">
+                            <img class="block mx-auto" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655050416/baiasm/Group_892_cwgire.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="text-lg pr-8 font-bold text-center"><a href="">Lunch</a></h3>
+                </div>
+                <!-- End.categories items -->
+                <div class="categories-items">
+                    <div class="categories-items-images">
+                        <a href="">
+                            <img class="block mx-auto" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655050415/baiasm/Group_893_aw4rj7.png" alt="">
+                        </a>
+                    </div>
+                    <h3 class="text-lg pr-8 font-bold text-center"><a href="">Chocolate</a></h3>
+                </div>
+                <!-- End.categories items -->
+            </div>
+        </div>
+    </section>
+    <section class="contact-us mt-20 ml-5 md:ml-0">
+        <div class="max-w-7xl mx-auto">
+            <div class="contact-us-heading my-10">
+                <h2 class="text-5xl font-bold text-center">Contact us</h2>
+            </div>
+            <form action="">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="contact-us-left ">
+                        <label for="name" class="block text-lg text-current">NAME</label>
+                        <input class="border border-solid border-gray-200 w-full py-3 pl-4 mt-2 rounded mb-4" type="text" id="name" placeholder="Enter your name...">
+                        <label for="name" class="block text-lg text-current">SUBJECT</label>
+                        <input class="border border-solid border-gray-200 w-full py-3 pl-4 mt-2 rounded" type="text" id="name" placeholder="Enter subject...">
+                    </div>
+                    <div class="contact-us-right ">
+                        <label for="name" class="block text-lg text-current">EMAIL ADDRESS</label>
+                        <input class="border border-solid border-gray-200 w-full py-3 pl-4 mt-2 rounded mb-4" type="text" id="name" placeholder="Your email address...">
+                        <label for="name" class="block text-lg text-current">ENQUIRY TYPE</label>
+                        <select name="" id="name" class="border border-solid border-gray-200 w-full py-3 pl-4 mt-2 rounded mb-4 text-gray-400">
+                            <option value="">Advertising</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="" class="block text-lg text-current">MESSAGES</label>
+                    <textarea cols="30" rows="10" placeholder="Enter your messages..." class="border border-solid border-gray-200 w-full pl-4 pt-5"></textarea>
+                </div>
+                <div class="text-center mt-8"><button class="bg-black py-2 px-7 text-white text-base rounded">Submit</button></div>
+            </form>
+        </div>
+    </section>
+    <footer class="mt-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center border-t">
+            <div class="logo font-bold text-3xl pt-8">
+                <a href="">Fudo<strong class="text-red-500">.</strong></a>
+            </div>       
+                <ul class="flex justify-between text-lg ">
+                    <li class="mr-5"><a href="">Home</a></li>
+                    <li class="mr-5"><a href="">Products</a></li>
+                    <li class="mr-5"><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>    
+        </div>   
+    </footer>
+</body>
 </html>

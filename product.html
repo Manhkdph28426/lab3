@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/897caa2e8c.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+    <header class="mt-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="logo font-bold text-3xl">
+                <a href="index.html">Fudo<strong class="text-red-500">.</strong></a>
+            </div>       
+                <ul class="flex justify-between text-lg ">
+                    <li class="mr-5"><a href="index.html">Home</a></li>
+                    <li class="mr-5"><a href="product.html">Products</a></li>
+                    <li class="mr-5"><a href="">About Us</a></li>
+                    <li class="mr-5"><a href="">Contact Us</a></li>
+                </ul>       
+            <div class="flex">
+                <button class="mr-2.5"><i class="fa-solid fa-cart-shopping hidden md:block"></i></button>
+                <a href="signin.html" class="mr-2.5 p-2 border-2 border-solid border-red-500 rounded text-sm block">Sign In</a>
+                <a href="signup.html" class="p-2 border-2 border-solid border-red-500 rounded bg-red-500 text-white text-sm block">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <section class="banner mt-12 ml-5 md:ml-0">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="banner-column">
+                    <h2 class="text-5xl font-bold mb-6">Big and Juicy Wagyu Beef Cheeseburger</h2>
+                    <span class="text-5xl text-red-500 font-bold">$30</span>
+                    <p class="text-lg mt-6">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+                    <form action="" class="mt-5 text-white flex ">
+                        <input type="text" placeholder="Quantity" class="pr-20 py-4 pl-4 outline-none border rounded-xl w-2/5 overflow-hidden text-black block">
+                        <button class="rounded-xl bg-black block ml-4 px-5">Add To Cart</button>
+                    </form>
+                </div>
+                <div class="bannr-column">
+                    <img class="w-full" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049880/baiasm/Mask_Group_1_uxwujd.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="products mt-20 ml-5 md:ml-0">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold">Related Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img class="w-full" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_3_qtc2q5.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class=" text-lg my-4 font-bold"><a href="">Fresh and Healthy Mixed Mayonnaise Salad</a></h3>
+                        <span class="mb-4 block text-red-500 text-xl font-bold">$30</span>
+                        <button class="rounded-md h-10 bg-black text-white w-full">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img class="w-full" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_4_dtz9h2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class=" text-lg my-4 font-bold"><a href="">The Creamiest Creamy Chicken</a></h3>
+                        <span class="mb-4 block text-red-500 text-xl font-bold">$30</span>
+                        <button class="rounded-md h-10 bg-black text-white w-full mt-[3px]">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- End.items -->
+                <div class="product-items mb-10">
+                    <div class="product-items-images">
+                        <a href="">
+                            <img class="w-full" src="https://res.cloudinary.com/dca0fvukq/image/upload/v1655049881/baiasm/Mask_Group_2_wpltcj.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-items-conten">
+                        <h3 class=" text-lg my-4 font-bold"><a href="">Fruity Pancake with Orange & Blueberry</a></h3>
+                        <span class="mb-4 block text-red-500 text-xl font-bold">$30</span>
+                        <button class="rounded-md h-10 bg-black text-white w-full">Add To Cart</button>
+                    </div>
+                </div>
+                <!-- End.items -->
+            </div>
+        </div>
+    </section>
+    <footer class="mt-20">
+        <div class="max-w-7xl mx-auto flex justify-between items-center border-t">
+            <div class="logo font-bold text-3xl pt-8">
+                <a href="">Fudo<strong class="text-red-500">.</strong></a>
+            </div>       
+                <ul class="flex justify-between text-lg ">
+                    <li class="mr-5"><a href="">Home</a></li>
+                    <li class="mr-5"><a href="">Products</a></li>
+                    <li class="mr-5"><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>   
+        </div>
+    </footer>
+</body>
+</html>
